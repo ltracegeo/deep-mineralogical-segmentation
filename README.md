@@ -1,8 +1,8 @@
 # Deep Mineralogical Segmentation
 
-This repository provides source code related to the submission of the work **Deep mineralogical segmentation of thin section images based on QEMSCAN maps** to [Computers & Geosciences](https://www.sciencedirect.com/journal/computers-and-geosciences).
+This repository provides source code related to the submission of the work **Deep mineralogical segmentation of thin section images based on QEMSCAN maps** to [Applied Computing and Geosciences](https://www.sciencedirect.com/journal/applied-computing-and-geosciences).
 
-Repository dedicated to the segmentation of mineral phases in carbonate thin section rocks. The proposed Computer Vision method aims at mimicking the chemical method [*QEMSCAN* (*Quantitative  Evaluation  of  Minerals by  Scanning  Electron  Microscopy*)](https://www.researchgate.net/publication/258461582_QEMSCAN_Quantitative_Evaluation_of_Minerals_by_Scanning_Electron_Microscopy_capability_and_application_to_fracture_characterization_in_geothermal_systems), which maps as image the location of the pores and different minerals present in the thin section. The current work was developed to be able to differentiate between 6 classes of mineral phases: **Calcite (0 to 1% MgO), Dolomite, Mg-Clayminerals, Pores, Quartz and Others**
+Repository dedicated to the segmentation of mineral phases in carbonate thin section rocks. The proposed Computer Vision method aims at mimicking the chemical method [*QEMSCAN* (*Quantitative  Evaluation  of  Minerals by  Scanning  Electron  Microscopy*)](https://www.researchgate.net/publication/258461582_QEMSCAN_Quantitative_Evaluation_of_Minerals_by_Scanning_Electron_Microscopy_capability_and_application_to_fracture_characterization_in_geothermal_systems), which maps as image the location of the pores and different minerals present in the thin section. The current work was developed to be able to differentiate between 6 classes of mineral phases: **Calcite (0 to 1% MgO), Dolomite, Mg-Clayminerals, Pores, Quartz and Others**.
 
 The repository offers:
     
@@ -28,7 +28,7 @@ The provided resources expect both plane polarized (PP) and cross polarized (XP)
 
 ### Labeling
 
-QEMSCAN maps corresponding to each thin section are expected to be used as groundtruth labels. Normally, the maps tend to have much lower resolution than the thin section images and not aligned to them. Therefore, all thin section images must go through a manual registration (alignment) process. As a consequence, the annotations become inaccurate in some regions, especially in transition regions between classes.
+QEMSCAN maps corresponding to each thin section are expected to be used as groundtruth labels. Normally, the maps tend to have much lower resolution than the thin section images and not to be aligned to them. Therefore, all thin section images must go through a manual registration (alignment) process. As a consequence, the annotations become inaccurate in some regions, especially in transition regions between classes.
 
 For the registration of thin section images and QEMSCAN maps, refer to the digital rocks processing platform [GeoSlicer](https://github.com/petrobras/GeoSlicer).
 
